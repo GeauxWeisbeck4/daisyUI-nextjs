@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <div className="navbar bg-sky-300">
+    <div className="navbar bg-base-100">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -18,26 +18,17 @@ export default function Navbar() {
                 d="M4 6h16M4 12h8m-8 6h16"
               />
             </svg>
-          <label>                                                                                                                                                                                                                                                                //
-
-
-
-
-
-
-
-            
-                                                                                                                                                           
+          </label>
           <ul
             tabIndex={0}
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Item 1</a>
+              <a>Home</a>
             </li>
             <li tabIndex={0}>
               <a className="justify-between">
-                Parent
+                Resources
                 <svg
                   className="fill-current"
                   xmlns="http://www.w3.org/2000/svg"
@@ -50,15 +41,37 @@ export default function Navbar() {
               </a>
               <ul className="p-2">
                 <li>
-                  <a>Submenu 1</a>
+                  <a>Case Studies</a>
                 </li>
                 <li>
-                  <a>Submenu 2</a>
+                  <a>Notes</a>
+                </li>
+              </ul>
+            </li>
+            <li tabIndex={0}>
+              <a className="justify-between">
+                Services
+                <svg
+                  className="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                </svg>
+              </a>
+              <ul className="p-2">
+                <li>
+                  <a>Case Studies</a>
+                </li>
+                <li>
+                  <a>Notes</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a>Item 3</a>
+              <a>Blog</a>
             </li>
           </ul>
         </div>
@@ -67,11 +80,14 @@ export default function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Item 1</a>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
           </li>
           <li tabIndex={0}>
-            <a>
-              Parent
+            <a href="/resources">
+              Resources
               <svg
                 className="fill-current"
                 xmlns="http://www.w3.org/2000/svg"
@@ -84,15 +100,46 @@ export default function Navbar() {
             </a>
             <ul className="p-2">
               <li>
-                <a>Submenu 1</a>
+                <a href="/resources/case-studies">Case Studies</a>
               </li>
               <li>
-                <a>Submenu 2</a>
+                <a href="/resources/content">Content</a>
+              </li>
+              <li>
+                <a href="/resources/notes">Notes</a>
+              </li>
+            </ul>
+          </li>
+          <li tabIndex={0}>
+            <a href="/services">
+              Services
+              <svg
+                className="fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+              >
+                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+              </svg>
+            </a>
+            <ul className="p-2">
+              <li>
+                <a href="/services/web-dev">Web Development</a>
+              </li>
+              <li>
+                <a href="/services/marketing">Marketing</a>
+              </li>
+              <li>
+                <a href="/services/graphic-design">Graphic Design</a>
               </li>
             </ul>
           </li>
           <li>
-            <a>Item 3</a>
+            <a href="/blog">Blog</a>
+          </li>
+          <li>
+            <a href="/contactw">Contact</a>
           </li>
         </ul>
       </div>
