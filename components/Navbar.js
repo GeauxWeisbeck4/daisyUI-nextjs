@@ -27,7 +27,7 @@ export default function Navbar() {
               <a>Home</a>
             </li>
             <li tabIndex={0}>
-              <a className="justify-between">
+              <a href="/resources" className="justify-between">
                 Resources
                 <svg
                   className="fill-current"
@@ -41,15 +41,18 @@ export default function Navbar() {
               </a>
               <ul className="p-2">
                 <li>
-                  <a>Case Studies</a>
+                  <a href="/resources/case-studies">Case Studies</a>
                 </li>
                 <li>
-                  <a>Notes</a>
+                  <a href="/resources/content">Content</a>
+                </li>
+                <li>
+                  <a href="/resources/notes">Notes</a>
                 </li>
               </ul>
             </li>
             <li tabIndex={0}>
-              <a className="justify-between">
+              <a href="/services" className="justify-between">
                 Services
                 <svg
                   className="fill-current"
@@ -63,15 +66,18 @@ export default function Navbar() {
               </a>
               <ul className="p-2">
                 <li>
-                  <a>Case Studies</a>
+                  <a href="/services/web-development">Case Studies</a>
                 </li>
                 <li>
-                  <a>Notes</a>
+                  <a href="/services/marketing">Marketing</a>
+                </li>
+                <li>
+                  <a href="/services/graphic-design">Graphic Design</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a>Blog</a>
+              <a href="/blog">Blog</a>
             </li>
           </ul>
         </div>
@@ -138,13 +144,10 @@ export default function Navbar() {
           <li>
             <a href="/blog">Blog</a>
           </li>
-          <li>
-            <a href="/contactw">Contact</a>
-          </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a href="/contact" className="btn">Get started</a>
+        <a href="/contact" className="btn">Contact Me</a>
       </div>
     </div>
   );
