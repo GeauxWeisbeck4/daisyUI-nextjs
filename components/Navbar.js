@@ -144,7 +144,7 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Get started</a>
+        <a href="/contact" className="btn">Get started</a>
       </div>
     </div>
   );
