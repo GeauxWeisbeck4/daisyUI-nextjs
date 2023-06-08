@@ -1,13 +1,15 @@
 import Head from 'next/head';
-import Navbar from '../components/Navbar.js';
+
+
 
 export default function Home() {
   return (
     <div>
       <Head>Andrew Weisbeck Dev Home</Head>
+      
 
-      <Navbar />
       <main>
+      
         <div
           className="hero min-h-screen"
           style={{
